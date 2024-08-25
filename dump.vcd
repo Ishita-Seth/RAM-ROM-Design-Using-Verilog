@@ -1,5 +1,5 @@
 $date
-Sun Aug 25 15:00:53 2024
+Sun Aug 25 15:13:36 2024
 $end
 $version
 Riviera-PRO Version 2023.04.112.8911
@@ -8,57 +8,65 @@ $timescale
 1 ns
 $end
 
-$scope module dual_port_ram_tb $end
-$var wire 8 ! q_a [7:0] $end
-$var wire 8 " q_b [7:0] $end
-$var reg 8 # data_a [7:0] $end
-$var reg 8 $ data_b [7:0] $end
-$var reg 6 % addr_a [5:0] $end
-$var reg 6 & addr_b [5:0] $end
-$var reg 1 ' we_a $end
-$var reg 1 ( we_b $end
-$var reg 1 ) clk $end
+$scope module rom_tb $end
+$var wire 4 ! data [3:0] $end
+$var reg 1 " clk $end
+$var reg 1 # en $end
+$var reg 4 $ addr [3:0] $end
 $upscope $end
 
 $enddefinitions $end
 $dumpvars
 bx !
-bx "
-b110011 #
-b1000100 $
-b1 %
-b10 &
-1'
-1(
-1)
+1"
+0#
+bx $
 $end
 #5
-0)
+0"
 #10
-b1010101 #
-b11 %
-b1 &
-0(
-1)
-b110011 "
+1#
+b1010 $
+1"
+b1110 !
 #15
-0)
+0"
 #20
-b10 %
-b11 &
-0'
-1)
-b1010101 "
-b1000100 !
+b110 $
+1"
+b1100 !
 #25
-0)
+0"
 #30
-b1 %
-b1110111 $
-b10 &
-1(
-1)
-b110011 !
+b11 $
+1"
+b10 !
 #35
-0)
+0"
 #40
+0#
+b1111 $
+1"
+bx !
+#45
+0"
+#50
+1#
+b1000 $
+1"
+b1010 !
+#55
+0"
+#60
+b0 $
+1"
+b10 !
+#65
+0"
+#70
+bx $
+1"
+bx !
+#75
+0"
+#80
