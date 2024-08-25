@@ -1,0 +1,64 @@
+$date
+Sun Aug 25 15:00:53 2024
+$end
+$version
+Riviera-PRO Version 2023.04.112.8911
+$end
+$timescale
+1 ns
+$end
+
+$scope module dual_port_ram_tb $end
+$var wire 8 ! q_a [7:0] $end
+$var wire 8 " q_b [7:0] $end
+$var reg 8 # data_a [7:0] $end
+$var reg 8 $ data_b [7:0] $end
+$var reg 6 % addr_a [5:0] $end
+$var reg 6 & addr_b [5:0] $end
+$var reg 1 ' we_a $end
+$var reg 1 ( we_b $end
+$var reg 1 ) clk $end
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+bx !
+bx "
+b110011 #
+b1000100 $
+b1 %
+b10 &
+1'
+1(
+1)
+$end
+#5
+0)
+#10
+b1010101 #
+b11 %
+b1 &
+0(
+1)
+b110011 "
+#15
+0)
+#20
+b10 %
+b11 &
+0'
+1)
+b1010101 "
+b1000100 !
+#25
+0)
+#30
+b1 %
+b1110111 $
+b10 &
+1(
+1)
+b110011 !
+#35
+0)
+#40
